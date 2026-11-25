@@ -29,8 +29,8 @@ def render(t,ctx):
         i=j
     return out
 html_body=render(body,data)
-html_body=html_body.replace('/_blob/a07e92d1f4270085ff5f278cf4aa2aa7','assets/p2611summitawl-hero-universum-v1.jpg').replace('/_blob/e20d6d2e7e20c49453337d82dc381ad5','assets/p2611summitawl-schluss-universum-v1.jpg')
-helmet=helmet.replace('/_blob/a07e92d1f4270085ff5f278cf4aa2aa7','assets/p2611summitawl-hero-universum-v1.jpg').replace('/_blob/e20d6d2e7e20c49453337d82dc381ad5','assets/p2611summitawl-schluss-universum-v1.jpg')
+html_body=html_body.replace('/_blob/a07e92d1f4270085ff5f278cf4aa2aa7','assets/p2611summitawl-hero-universum-v2.jpg').replace('/_blob/e20d6d2e7e20c49453337d82dc381ad5','assets/p2611summitawl-schluss-universum-v2.jpg')
+helmet=helmet.replace('/_blob/a07e92d1f4270085ff5f278cf4aa2aa7','assets/p2611summitawl-hero-universum-v2.jpg').replace('/_blob/e20d6d2e7e20c49453337d82dc381ad5','assets/p2611summitawl-schluss-universum-v2.jpg')
 assert '{{' not in html_body, re.findall(r'.{30}\{\{.{30}',html_body)[:3]
 assert '_blob' not in html_body+helmet
 page=f'''<!doctype html>
