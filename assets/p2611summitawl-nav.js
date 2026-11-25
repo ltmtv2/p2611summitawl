@@ -23,9 +23,7 @@
       {
         heading: 'EINLADUNGEN',
         items: [
-          { label: 'Speaker-Einladung 1', href: '/speakereinladung' },
-          { label: 'Speaker-Einladung 2', href: null },
-          { label: 'Speaker-Einladung 3', href: null },
+          { label: 'Speaker-Einladung', href: '/speakereinladung' },
         ],
       },
       {
