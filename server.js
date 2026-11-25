@@ -12,6 +12,10 @@ app.get(['/', '/index.html'], (_req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+app.get(['/speakereinladung', '/speakereinladung/', '/speakereinladung/index.html'], (_req, res) => {
+  res.sendFile(path.join(__dirname, 'speakereinladung', 'index.html'));
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running at http://0.0.0.0:${PORT}`);
 });

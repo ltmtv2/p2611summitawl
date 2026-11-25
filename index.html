@@ -19,10 +19,28 @@ p,span,label,a{text-wrap:pretty;orphans:3;widows:3}
 .hero-bg{background:linear-gradient(180deg,rgba(6,7,26,.6) 0%,rgba(6,7,26,.3) 45%,rgba(6,7,26,.75) 100%),url(assets/p2611summitawl-hero-universum-v1.jpg) center/cover}
 .cta-bg{background:linear-gradient(180deg,rgba(6,7,26,.55) 0%,rgba(6,7,26,.45) 100%),url(assets/p2611summitawl-schluss-universum-v1.jpg) center/cover}
 input::placeholder{color:#64748b}
+.speaker-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:56px;max-width:660px;width:100%;margin:0 auto}
+.speaker-card{flex:0 1 280px;width:280px;max-width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
 </style>
 </head>
 <body>
-<div style="font-family: Inter, system-ui, sans-serif; color: #475569; background: #f6f9fc; font-size: 17px; line-height: 1.8; font-weight: 300">
+<div id="awl-page-shell" class="awl-page-shell" style="font-family: Inter, system-ui, sans-serif; color: #475569; background: #f6f9fc; font-size: 17px; line-height: 1.8; font-weight: 300">
+
+<div id="countdown-bar" role="region" aria-label="Countdown bis zum Kongressstart" style="position: sticky; top: 0; z-index: 50; background: rgba(6, 7, 26, 0.94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255, 255, 255, 0.12); color: #e2e8f0">
+<div style="max-width: 1240px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: center; gap: 16px; line-height: 1.3">
+<svg width="10" height="10" viewBox="0 0 22 22" aria-hidden="true" style="flex-shrink: 0"><path d="M11 0C11.8 7.5 14.5 10.2 22 11 14.5 11.8 11.8 14.5 11 22 10.2 14.5 7.5 11.8 0 11 7.5 10.2 10.2 7.5 11 0Z" fill="#a90499"></path></svg>
+<div id="countdown-timer" role="timer" style="display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: rgba(226, 232, 240, 0.8); font-variant-numeric: tabular-nums">
+<span><span id="cd-days" style="color: #ffffff">--</span>&nbsp;TAGE</span>
+<span style="color: rgba(255, 255, 255, 0.35)" aria-hidden="true">·</span>
+<span><span id="cd-hours" style="color: #ffffff">--</span>&nbsp;STD</span>
+<span style="color: rgba(255, 255, 255, 0.35)" aria-hidden="true">·</span>
+<span><span id="cd-mins" style="color: #ffffff">--</span>&nbsp;MIN</span>
+<span style="color: rgba(255, 255, 255, 0.35)" aria-hidden="true">·</span>
+<span><span id="cd-secs" style="color: #ffffff">--</span>&nbsp;SEK</span>
+</div>
+<svg width="10" height="10" viewBox="0 0 22 22" aria-hidden="true" style="flex-shrink: 0"><path d="M11 0C11.8 7.5 14.5 10.2 22 11 14.5 11.8 11.8 14.5 11 22 10.2 14.5 7.5 11.8 0 11 7.5 10.2 10.2 7.5 11 0Z" fill="#a90499"></path></svg>
+</div>
+</div>
 
 <section id="anmeldung" class="hero-bg" style="min-height: 940px; display: flex; flex-direction: column">
 <header style="width: 100%; max-width: 1240px; margin: 0 auto; box-sizing: border-box; padding: 32px; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.14)">
@@ -209,247 +227,25 @@ input::placeholder{color:#64748b}
 <span style="font-size: 11px; letter-spacing: 7px; color: #64748b">DEINE SPEAKER</span>
 <h2 style="font-size: 44px; line-height: 1.2">Sieben Schwerpunkte. Menschen, die einfach&nbsp;helfen.</h2>
 <div style="width: 48px; height: 1px; background: #a90499"></div>
-<p style="max-width: 640px">Georg und Sandra führen durch den Kongress. Die Expertenbeiträge sind sieben Schwerpunkten zugeordnet, von der Wurzel bis zur&nbsp;Krone.</p>
+<p style="max-width: 640px">Georg und Sandra führen durch den Kongress. Die Expertenbeiträge sind sieben Schwerpunkten zugeordnet, von der Krone bis zur&nbsp;Wurzel.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 56px">
 
-<div style="flex: 0 1 230px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div style="flex: 0 1 290px; width: 290px; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 21px; color: #0f172a; margin-top: 8px">Georg Martinka</span>
 <span style="font-size: 13px; letter-spacing: 1px; margin-top: -10px; color: #64748b">Gastgeber</span>
 </div>
 
-<div style="flex: 0 1 230px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div style="flex: 0 1 290px; width: 290px; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 21px; color: #0f172a; margin-top: 8px">Sandra Hirsch</span>
 <span style="font-size: 13px; letter-spacing: 1px; margin-top: -10px; color: #64748b">Gastgeberin</span>
 </div>
 
 </div>
 
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #c0392b; flex-shrink: 0"></span>WURZEL</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Changemakers</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Du funktionierst im Job und spürst: Das war nicht alles.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #e67e22; flex-shrink: 0"></span>SAKRAL</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Parents</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Für die Kinder da sein, ohne dich selbst zu verlieren.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #d4a017; flex-shrink: 0"></span>SOLARPLEXUS</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Healers</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Du hast die Ausbildung. Jetzt dürfen dich Menschen finden.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #2e8b57; flex-shrink: 0"></span>HERZ</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Hearts</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Bleiben oder gehen? Zuerst klärt sich, wer du selbst bist.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #3fa7d6; flex-shrink: 0"></span>HALS</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Coaches</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Dein Wissen ist da. Jetzt bekommt es eine Bühne.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
-<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
-<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #4b3f9e; flex-shrink: 0"></span>STIRN</span>
-<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Empaths</span>
-</div>
-<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Hochsensibel ist keine Schwäche. Es ist deine Antenne.</h3>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
-<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
-<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
-</div>
-
-</div>
-</div>
-
-<div style="border-top: 1px solid #e2e8f0; padding-top: 40px; display: flex; flex-direction: column; gap: 32px">
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
 <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
 <div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
 <span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #8e44ad; flex-shrink: 0"></span>KRONE</span>
@@ -457,28 +253,250 @@ input::placeholder{color:#64748b}
 </div>
 <h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Du spürst längst, dass mehr in dir steckt.</h3>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 32px 24px">
+<div class="speaker-grid">
 
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
 <span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
 </div>
 
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
 <span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
 </div>
 
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
 <span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
 </div>
 
-<div style="display: flex; flex-direction: column; gap: 10px">
-<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 2px; background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #8e44ad; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #4b3f9e; flex-shrink: 0"></span>STIRN</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Empaths</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Hochsensibel ist keine Schwäche. Es ist deine Antenne.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #4b3f9e; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #3fa7d6; flex-shrink: 0"></span>HALS</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Coaches</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Dein Wissen ist da. Jetzt bekommt es eine Bühne.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #3fa7d6; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #2e8b57; flex-shrink: 0"></span>HERZ</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Hearts</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Bleiben oder gehen? Zuerst klärt sich, wer du selbst bist.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #2e8b57; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #d4a017; flex-shrink: 0"></span>SOLARPLEXUS</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Healers</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Du hast die Ausbildung. Jetzt dürfen dich Menschen finden.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #d4a017; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #e67e22; flex-shrink: 0"></span>SAKRAL</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Parents</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Für die Kinder da sein, ohne dich selbst zu verlieren.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #e67e22; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+</div>
+</div>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 48px; display: flex; flex-direction: column; gap: 44px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: baseline">
+<div style="flex: 0 0 260px; display: flex; flex-direction: column; gap: 10px">
+<span style="display: flex; align-items: center; gap: 10px; font-size: 10px; font-weight: 500; letter-spacing: 4px; color: #64748b"><span style="width: 10px; height: 10px; border-radius: 999px; background: #c0392b; flex-shrink: 0"></span>WURZEL</span>
+<span style="font-family: Adamina, serif; font-size: 22px; letter-spacing: 1px; color: #0f172a">Awakening Changemakers</span>
+</div>
+<h3 style="flex: 1 1 360px; font-size: 26px; line-height: 1.35">Du funktionierst im Job und spürst: Das war nicht alles.</h3>
+</div>
+<div class="speaker-grid">
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 1]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 2]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
+<span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 3]</span>
+<span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
+</div>
+
+<div class="speaker-card">
+<div style="width: 100%; aspect-ratio: 3 / 4; border-radius: 12px; overflow: hidden; box-shadow: 0 14px 32px rgba(21, 26, 45, 0.15); background: #ecf2f8; border-top: 3px solid #c0392b; display: flex; align-items: center; justify-content: center; font-size: 11px; letter-spacing: 2px; color: #64748b">[PORTRAIT]</div>
 <span style="font-family: Adamina, serif; font-size: 18px; color: #0f172a">[Speaker 4]</span>
 <span style="font-size: 13px; margin-top: -6px; color: #64748b">[Thema]</span>
 </div>
@@ -618,9 +636,43 @@ input::placeholder{color:#64748b}
 
 <footer style="max-width: 1100px; margin: 0 auto; padding: 36px 24px 48px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 12px; letter-spacing: 0.5px; color: #64748b">
 <span>Die Inhalte sind Hilfe zur Selbsthilfe und ersetzen keine Therapie oder ärztliche Behandlung.</span>
-<span style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center"><a href="https://www.instagram.com/georgmartinka.me" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #64748b"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"></circle></svg>Georg auf Instagram</a><a href="https://www.instagram.com/sandrahirschseelenplan" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #64748b"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"></circle></svg>Sandra auf Instagram</a><a href="#" style="color: #64748b">Impressum</a><a href="#" style="color: #64748b">Datenschutz</a></span>
+<span style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center"><a href="https://www.instagram.com/georgmartinka.me" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #64748b"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"></circle></svg>Georg auf Instagram</a><a href="https://www.instagram.com/sandrahirschseelenplan" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #64748b"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"></circle></svg>Sandra auf Instagram</a><a href="#" style="color: #64748b">Impressum</a><a href="#" style="color: #64748b">Datenschutz</a><button type="button" id="awl-nav-trigger" class="awl-nav-trigger" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="awl-nav-drawer" aria-haspopup="dialog">.</button></span>
 </footer>
 
 </div>
+<script>
+(function(){
+  var target = new Date('2027-01-19T18:00:00+01:00').getTime();
+  var dEl = document.getElementById('cd-days');
+  var hEl = document.getElementById('cd-hours');
+  var mEl = document.getElementById('cd-mins');
+  var sEl = document.getElementById('cd-secs');
+  var timerEl = document.getElementById('countdown-timer');
+  function pad(n){ return n < 10 ? '0' + n : String(n); }
+  function update(){
+    var diff = target - Date.now();
+    if (diff <= 0) {
+      if (timerEl) timerEl.textContent = 'Der Kongress hat begonnen.';
+      return false;
+    }
+    var totalSeconds = Math.floor(diff / 1000);
+    var days = Math.floor(totalSeconds / 86400);
+    var hours = Math.floor((totalSeconds % 86400) / 3600);
+    var mins = Math.floor((totalSeconds % 3600) / 60);
+    var secs = totalSeconds % 60;
+    if (dEl) dEl.textContent = String(days);
+    if (hEl) hEl.textContent = pad(hours);
+    if (mEl) mEl.textContent = pad(mins);
+    if (sEl) sEl.textContent = pad(secs);
+    return true;
+  }
+  if (update()) {
+    var interval = setInterval(function(){
+      if (!update()) clearInterval(interval);
+    }, 1000);
+  }
+})();
+</script>
+<script src="/assets/p2611summitawl-nav.js" defer></script>
 </body>
 </html>
