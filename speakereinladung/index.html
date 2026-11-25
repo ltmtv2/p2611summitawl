@@ -305,6 +305,27 @@ section[style*="#f6f9fc"]{--hbg:#f6f9fc}
 .cal-fallback span{font-size:10px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:#a90499}
 .cal-fallback p{margin:0;max-width:520px;font-size:16px;line-height:1.7;color:#475569}
 .cal-fallback a{display:inline-flex;align-items:center;min-height:48px;padding:0 28px;border-radius:12px;background:#a90499;color:#fff;text-decoration:none;font-size:15px}
+/* Mobil-Optimierung */
+html,body{overflow-x:hidden}
+@supports (overflow:clip){html,body{overflow-x:clip}}
+@media(max-width:640px){
+#einladung header{flex-direction:column;align-items:flex-start!important;gap:8px!important;padding:20px 22px!important}
+#einladung header span:last-child{font-size:10px!important;letter-spacing:2.5px!important;line-height:1.6}
+#einladung>div{padding:48px 22px 56px!important;gap:22px!important;max-width:100%!important;box-sizing:border-box}
+#einladung>div>span{letter-spacing:4px!important;font-size:10px!important;line-height:1.8}
+.hero-title{font-size:min(8vw,40px)!important;line-height:1.15!important}
+#einladung>div>p{font-size:17px!important;line-height:1.65!important}
+#expertenbeitrag .hb{width:auto!important;max-width:none!important;margin:0 6px!important;padding:32px 22px!important;outline-width:6px}
+.section-title{font-size:min(7.6vw,34px)!important}
+section[data-split] .hb .section-title{font-size:min(7.6vw,30px)!important}
+section[data-split] .hb{grid-template-columns:minmax(0,1fr)!important}
+.host,.benefit-card,.sup-item,.theme-card,.wm-mail,.wm-post{min-width:0!important;max-width:100%!important;box-sizing:border-box}
+#calendly-widget{min-width:0!important}
+#expertenbeitrag .hb{grid-template-columns:minmax(0,1fr)!important}
+.benefit-grid,.step-grid,.two-col{grid-template-columns:minmax(0,1fr)!important}
+.win-art{width:100%!important;left:0!important}
+.section-title{overflow-wrap:break-word;hyphens:auto}
+}
 </style>
 </head>
 <body>
@@ -458,7 +479,7 @@ section[style*="#f6f9fc"]{--hbg:#f6f9fc}
 
 <section id="expertenbeitrag" class="onyx" data-split="1" style="background:#f6f9fc;border-top:1px solid #e2e8f0">
 <div class="wrap" style="padding-top:120px;padding-bottom:120px;display:flex;flex-direction:column;gap:52px">
-<div class="hb" style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px"><span class="kicker">Dein Expertenbeitrag</span><h2 class="section-title">Ein professionell produzierter&nbsp;Expertenbeitrag.</h2><div class="rule"></div><p style="font-size:18px;line-height:1.8">Aufnahme, Schnitt und Veröffentlichung liegen bei uns. Du bekommst einen professionell produzierten Beitrag, den du auch selbst gern&nbsp;zeigst. Er bleibt dauerhaft Teil des Kongresspakets und arbeitet weiter für&nbsp;dich.</p></div>
+<div class="hb" style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px"><span class="kicker">Dein Expertenbeitrag</span><h2 class="section-title">Ein professionell produzierter Expertenbeitrag.</h2><div class="rule"></div><p style="font-size:18px;line-height:1.8">Aufnahme, Schnitt und Veröffentlichung liegen bei uns. Du bekommst einen professionell produzierten Beitrag, den du auch selbst gern&nbsp;zeigst. Er bleibt dauerhaft Teil des Kongresspakets und arbeitet weiter für&nbsp;dich.</p></div>
 </div>
 </section>
 
