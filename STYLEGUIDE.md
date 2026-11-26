@@ -36,22 +36,24 @@ Satzregeln: keine Hurenkinder und Schusterjungen, geschützte Leerzeichen (`&nbs
 - Kein Grün, kein Rot, keine Ampelfarben, keine Emojis.
 
 ### Rhythmus der Sektionen
-- Weiß und Hellgrau (`#f6f9fc`) im Wechsel, getrennt durch feine Linien.
+- Weiß und Hellgrau (`#f6f9fc`) streng im Wechsel, getrennt durch feine Linien. Nach einem dunklen Band beginnt der Wechsel wieder mit Weiß.
 - Höchstens ein dunkles Navy-Band pro Seite (Speaker-Einladung: „Unsere Reichweite“).
-- Viel Luft: Sektionen mit 120 bis 140 px Abstand oben und unten.
+- Luft, aber nicht zu viel: Sektionen mit 150 px Abstand oben und unten, 72 px zwischen Blöcken (280 px war zu viel, die Seite wurde zu lang).
+- Keine Doppelungen: Jeder Inhalt (z. B. „Drei Schritte“, Technik) steht nur einmal auf der Seite.
 
 ### Zeichen und Ornament
 - Einziges Symbol: der Stern ✦ in Magenta (klein) bzw. Weiß im Hero.
 - Unter jeder Abschnittsüberschrift ein kurzer Magenta-Strich (48 × 1 px).
-- Keine Muster, keine Texturen, keine Sacred-Geometry-Grafiken. Tiefe entsteht nur durch die Göttinnen-Bilder.
+- Keine Sacred-Geometry-Grafiken, keine Hexagone. Tiefe entsteht durch Marmor: Göttinnen, Skulpturen und Marmor-Texturen (siehe Bildwelt).
+- Graue Sektionen tragen das Onyx-Muster mit 7 % Deckkraft. Einzelne Sektionen dürfen eine eigene Marmor-Textur mit 30 % haben (Zielgruppen: Eis-Marmor, Support: Himmel-Marmor).
 
 ### Typo-Skala
 | Rolle | Stil |
 |---|---|
 | Hero-Überschrift | Adamina, groß (`.hero-title`), Weiß |
-| Abschnittsüberschrift | Adamina, `.section-title`, ein bis zwei Zeilen |
+| Abschnittsüberschrift | Adamina, `.section-title`, ein bis zwei Zeilen; optisch feiner durch 0,8 px Kontur in Hintergrundfarbe (`-webkit-text-stroke`, `paint-order: fill stroke`), weil Adamina nur einen Schnitt hat |
 | Kicker über der Überschrift | Inter 11 px, Versalien, Sperrung 7 px, `#64748b` |
-| Kartentitel | Adamina 22 bis 24 px |
+| Kartentitel, h3 | Adamina 22 bis 25 px, ohne Kontur (auch Win-Etiketten ohne Kontur) |
 | Fließtext | Inter 300, 17 bis 19 px, Zeilenhöhe 1,8 |
 | Kleingedrucktes | Inter 13 px, `#64748b`, nie kleiner |
 
@@ -62,7 +64,11 @@ Satzregeln: keine Hurenkinder und Schusterjungen, geschützte Leerzeichen (`&nbs
 4. **Liste:** kurzer Magenta-Strich als Aufzählungszeichen.
 5. **Prinzip-Zeile:** Text mit 2 px Magenta-Linie am linken Rand, ohne Kasten.
 6. **Ruhige Textspalten:** drei Spalten ohne Kartenhintergrund, Kicker in Magenta.
-7. **Buttons:** gefüllt in Magenta nur für die eine Haupt-Aktion („Interviewtermin buchen“), alle anderen mit Magenta-Rahmen. Eckenradius 12 px wie Karten und Video, global auf allen Seiten (auch Formularfeld und Header-Button; Button im Formularfeld 8 px).
+7. **Glas-Kachel:** `rgba(255,255,255,.55)`, `backdrop-filter: blur(16px)`, weißer Rand, Radius 12 px. Für Vergleichskarten, Zielgruppen, Gastgeber. Auf Marmor-Hintergründen.
+8. **Glasfläche statt Kachelraster:** mehrere Punkte auf einer gemeinsamen Glasfläche mit Haarlinien dazwischen (Support, Expertenbeitrag im weißen Rahmen). Einzelne kleine Kacheln wirken billig.
+9. **Mockups:** Solo-Mail, iPhone-Reel (Dynamic Island, Statusleiste, Home-Balken, ohne Markenzeichen) und Social-Grafik mit Midjourney-Foto einer Interviewpartnerin; darunter immer „Beispiel mit erfundenem Namen, Symbolmockups, entspricht nicht den endgültigen Werbedesigns“.
+10. **Portraits:** groß, Hochformat 4:5, eckig mit oberer Rundung der Karte. Keine runden Avatare, keine Hexagone.
+11. **Buttons:** gefüllt in Magenta nur für die eine Haupt-Aktion („Interviewtermin buchen“), alle anderen mit Magenta-Rahmen. Eckenradius 12 px wie Karten und Video, global auf allen Seiten (auch Formularfeld und Header-Button; Button im Formularfeld 8 px).
 
 ## 4. Bildwelt: Göttinnen aus Marmor
 
@@ -94,6 +100,22 @@ a single classical greek marble goddess, standing upright with calm authority, c
 a single classical greek marble goddess, standing upright with calm authority, chin slightly raised, gaze into the distance, simple flowing drapery, pure reduced form, no props, no pedestal, no stones, no architecture, soft luminous white marble, placed in the right third of the frame, the left two thirds completely empty pure black, a faint cool lavender rim light tracing her silhouette, the figure dissolving softly into darkness at its edges, seamless pure black background, restrained, minimal, divine presence, quiet leadership, fine art photography --ar 16:9 --style raw --stylize 100 --no text, frame, border, ornament, flowers, gold, glow effects
 ```
 
+### Weitere freigegebene Motive
+| Motiv | Datei | Einsatz |
+|---|---|---|
+| Göttin freigestellt, Froschperspektive | `p2611summitawl-hintergrund-goettin-froschperspektive-v4.jpg` | „Der Unterschied“, unten über volle Breite, 30 % |
+| Infinity-Skulptur | `p2611summitawl-bild-infinity-skulptur-v3.jpg` | Win #2 (Lifetime), groß, mittig unten, 50 % |
+| Marmor-Arena | `p2611summitawl-hintergrund-arena-marmor-v2.jpg` | Win #4, flaches Band unten, 30 %, Verlauf nach oben |
+| Eis-Marmor | `p2611summitawl-hintergrund-eis-marmor-v2.jpg` | Zielgruppen, 30 % |
+| Himmel-Marmor | `p2611summitawl-hintergrund-himmel-marmor-v2.jpg` | Support, 30 % |
+| Onyx-Muster | `p2611summitawl-hintergrund-onyx-muster-v2.jpg` | alle grauen Sektionen, 7 % |
+| Interview-Foto (Midjourney) | `p2611summitawl-mockup-interview-foto-v2.jpg` | Mockups; keine echte Person mit erfundenem Namen |
+
+### Technik der Bilddateien
+- Nur JPG, höchstens 130 KB, höchstens 1920 px breit. Keine PNGs auf der Seite.
+- Transparente Vorlagen werden auf Weiß gelegt und als JPG gespeichert; sie stehen nur auf weißen Flächen. Kein Kontrastfilter darauf (macht Weiß grau).
+- Jede Bilddatei beginnt mit `p2611summitawl-`; bei jeder Änderung steigt die Versionsnummer.
+
 ### Weitere Motive erzeugen
 - In Midjourney eines der Referenzbilder in die Eingabezeile ziehen und als „Style reference“ verwenden.
 - Den Basis-Prompt behalten und nur Perspektive und Ausschnitt ändern. Beim hellen Prompt „female“ ergänzen (die erste helle Figur wirkt eher männlich).
@@ -105,26 +127,34 @@ a single classical greek marble goddess, standing upright with calm authority, c
 - Keine Einkommens- oder Heilversprechen. Zahlenbeispiele immer als „Rechenbeispiel“ mit „keine Garantie“ kennzeichnen.
 - Keine künstliche Verknappung.
 - Feste Begriffe: „Expertenbeiträge“ (nie anders), „E-Mail-Leben“, „Interviewtermin“, „Solo-Newsletter“, „Kongresspaket“.
-- Verboten: das Wort „leise“; „kaufen“ oder „bestellen“ als Aufforderung.
+- Verboten: das Wort „leise“; „kaufen“ oder „bestellen“ als Aufforderung. Beschreibend ist „kaufen“ erlaubt und gewünscht („alles, was diese Menschen später kaufen“).
+- Speaker nicht anbetteln: Die Einladung ist eine Auszeichnung. Was wir bieten (radikal andere Vergütung, Bühne für die Botschaft), steht selbstbewusst im Vordergrund. Professionelle Organisation ist selbstverständlich und wird nicht beworben.
 - Reihenfolge der Gastgeber: Georg Martinka vor Sandra Hirsch.
 - Fremde Texte nie wörtlich übernehmen, keine Spuren anderer Seiten.
 
-## 6. Seitenmuster (Referenz Speaker-Einladung)
+## 6. Seitenmuster (Referenz Speaker-Einladung, Stand 26.11.2026)
 1. Hero mit Universum, Hauptversprechen, ein Button
-2. Der Unterschied (Vergleich „Das übliche Modell“ / „Bei uns: viele Schritte weiter“), Video
-3. Unsere Reichweite (Navy-Band, Zahlen)
-4. So läuft es (drei Schritte)
-5. Thema, Publikum & Schwerpunkte
-6. Beteiligung mit Rechenbeispiel und „Wo ist der Haken?“
-7. Morgen-E-Mail
-8. Zuordnung (First come, first served)
-9. Gastgeber
-10. Löwenanteil der Arbeit
-11. Wir machen die Technik (Werbelinks)
-12. Zeitplan mit heißer Werbezeit
+2. Der Unterschied: „Als wäre es dein Kongress.“, Unterzeile zur Botschaft, Video, Glas-Vergleichskarten
+3. Dein Win #1 bis #4 (100 % vom Kongresspaket-Preis mit Rechenbeispiel, Lifetime, Fremdangebote, Morgen-E-Mail mit Mockups und „Bewährt“-Hinweis)
+4. Unsere Reichweite (Navy-Band, Zahlen)
+5. Zuordnung (First come, first served)
+6. Expertenbeitrag (weißer Glasrahmen)
+7. Werbematerial (Mockups, Werbelinks; Technik in einem Satz)
+8. Wo ist der Haken?
+9. Zielgruppen (sieben Glas-Kacheln)
+10. Gastgeber (große Portraits)
+11. Dein Teil (die einzigen drei Schritte)
+12. Zeitplan mit heißer Werbezeit (vertikal)
 13. Häufige Fragen
-14. Interviewtermin
-15. Support & Kontakt
+14. Interviewtermin (Calendly mit Ersatzkarte, falls er nicht lädt)
+15. Support (Glasfläche auf Himmel-Marmor)
+
+## 6a. Mobil (unter 640 px)
+- Nichts darf breiter als der Bildschirm sein; `overflow-x: clip` auf `html` und `body`.
+- Hero-Überschrift `min(8vw, 40px)`, Sektionsüberschriften `min(7.6vw, 34px)` bzw. 30 px in zweispaltigen Sektionen.
+- Alle Raster einspaltig mit `minmax(0, 1fr)`, keine festen Mindestbreiten.
+- Geschützte Leerzeichen nur bei kurzen Wortpaaren; lange Paare brechen auf dem Handy nicht um.
+- Prüfen bei 375 und 320 px Breite.
 
 ## 7. Ablage und Benennung
 - Dateien in Drive: „p2611summitawl - Selbsterklärende Funktion - Version“ (z. B. „p2611summitawl - Hintergrund Göttin hell - V1“).
@@ -140,4 +170,4 @@ a single classical greek marble goddess, standing upright with calm authority, c
 
 ---
 
-Author: Claude (Anthropic) · im Auftrag der Geschäftsleitung (Georg) · 25.11.2026
+Author: Claude (Anthropic) · im Auftrag der Geschäftsleitung (Georg) · 25.11.2026, aktualisiert 26.11.2026
