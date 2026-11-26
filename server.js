@@ -13,8 +13,14 @@ app.get(['/', '/index.html'], (_req, res) => {
 });
 
 app.get(['/speakereinladung', '/speakereinladung/', '/speakereinladung/index.html'], (_req, res) => {
-  res.sendFile(path.join(__dirname, 'speakereinladung', 'index.html'));
+  res.redirect(308, '/speakereinladung-sandra');
 });
+
+for (const name of ['speakereinladung-sandra', 'speakereinladung-georg']) {
+  app.get([`/${name}`, `/${name}/`, `/${name}/index.html`], (_req, res) => {
+    res.sendFile(path.join(__dirname, name, 'index.html'));
+  });
+}
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running at http://0.0.0.0:${PORT}`);

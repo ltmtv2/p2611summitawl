@@ -43,7 +43,9 @@ Nach jeder Änderung gehört ein datierter Eintrag ins Arbeitsprotokoll unten (D
 
 Startseite Version 0.1: statisches HTML in `index.html`, Platzhalter-Bilder in `assets/`, Generator `tools/build.py`. Die Seite ist vorerst für Suchmaschinen ausgeblendet (`noindex, nofollow`). Das Anmeldeformular ist noch nicht an Kit angebunden.
 
-Es wurde keine `vercel.json` angelegt. Die Seite wird als statisches Projekt ohne Build-Befehl aus dem Repo-Root veröffentlicht.
+Die Seite wird als statisches Projekt ohne Build-Befehl aus dem Repo-Root veröffentlicht. `vercel.json` enthält nur Weiterleitungen (alte Adresse `/speakereinladung` → `/speakereinladung-sandra`, 308).
+
+**Speaker-Einladung, zwei Adressen:** `/speakereinladung-sandra` ist die Vorlage, `/speakereinladung-georg` wird daraus erzeugt. Beide Seiten bleiben immer identisch, außer dem Calendly-Kalender unten und der Nennung „Interview mit Sandra/Georg“ (zwei Stellen). Änderungen nur in `speakereinladung-sandra/index.html` machen und danach `python3 tools/speakerseiten.py` ausführen; beide Dateien im selben Commit. Georgs Calendly-Link wird in `tools/speakerseiten.py` (`GEORG_CAL`) eingetragen; bis dahin zeigt auch die Georg-Seite Sandras Kalender.
 
 ## Offene Punkte und nächste Schritte
 
@@ -51,6 +53,7 @@ Es wurde keine `vercel.json` angelegt. Die Seite wird als statisches Projekt ohn
 - Bei Namecheap liegt noch ein alter URL-Park-Eintrag auf der Hauptdomain, den die Schnittstelle nicht löschen konnte. Die A-Einträge sind gesetzt. Falls die Domain später auf einer Parkseite landet, diesen URL-Eintrag in den erweiterten DNS-Einstellungen bei Namecheap entfernen.
 - Anmeldeformular an Kit anbinden.
 - `noindex, nofollow` erst entfernen, wenn die Seite freigegeben ist.
+- Georgs Calendly-Link für `/speakereinladung-georg` fehlt noch (in `tools/speakerseiten.py` eintragen, Skript ausführen).
 
 ## Arbeitsprotokoll
 
@@ -104,3 +107,4 @@ Es wurde keine `vercel.json` angelegt. Die Seite wird als statisches Projekt ohn
 - **26.11.2026, 00:16 Berlin — Claude (im Auftrag von Georg):** Mobilversion von `/speakereinladung` optimiert: Die Seite war auf dem Handy breiter als der Bildschirm (Hero-Überschrift und Text rechts abgeschnitten). Ursachen behoben: nicht umbrechende Überschriften in den zweispaltigen Sektionen, feste Mindestbreiten von Kachel-Rastern, Infinity-Bild mit 110 vw, Glasrahmen beim Expertenbeitrag. Unter 640 px: kleinere Hero- und Sektionsüberschriften, Hero-Kopfzeile untereinander, engere Abstände im Hero, Raster einspaltig, horizontales Überlaufen der Seite abgeschaltet. Geprüft bei 375 und 320 px Breite ohne Überlauf. Betroffene Dateien: `speakereinladung/index.html`, `PROJEKT.md`.
 - **26.11.2026, 05:16 Berlin — Claude (im Auftrag von Georg):** `/speakereinladung`: Infinity-Skulptur in Win #2 mittig unten statt links. Auf Georgs Wunsch „wählen“ durch „kaufen“ ersetzt: im Hero („alles, was diese Menschen später kaufen“) und in Win #2 („was diese Person bei uns kauft“). Betroffene Dateien: `speakereinladung/index.html`, `PROJEKT.md`.
 - **26.11.2026, 08:53 Berlin — Claude (im Auftrag von Georg):** Dokumentation nachgezogen: `STYLEGUIDE.md` auf den aktuellen Stand gebracht (Sektionsrhythmus und Abstände, Marmor-Texturen, Glas-Kacheln und Glasflächen, Mockups, große Portraits, feinere Überschriften, Bildtechnik JPG ≤ 130 KB, Ton „Auszeichnung statt Bettelbrief“, neues Seitenmuster, Mobilregeln). Freigegebener Bonjoro-Text für die Speaker-Einladung in `texte/p2611summitawl-bonjoro-speakereinladung.md`. Gleicher Stand in ClickUp (Product Book und Stilguide).
+- **26.11.2026, 10:45 Berlin — Claude (im Auftrag von Georg):** Speaker-Einladung auf zwei Adressen aufgeteilt: `speakereinladung/` umbenannt in `speakereinladung-sandra/` (Inhalt unverändert) und Klon `speakereinladung-georg/` angelegt, erzeugt von `tools/speakerseiten.py`. Unterschiede nur: Calendly-Link (vorerst Sandras, bis Georgs Link vorliegt) und „Interview mit Georg“ statt „mit Sandra“ (Zeitplan „Aufnahme“, Text über dem Kalender). Alte Adresse `/speakereinladung` leitet per `vercel.json` (und in `server.js`) dauerhaft auf `/speakereinladung-sandra` weiter. Menü (`assets/p2611summitawl-nav.js`) verlinkt beide Seiten. Betroffene Dateien: `speakereinladung-sandra/index.html`, `speakereinladung-georg/index.html`, `tools/speakerseiten.py`, `vercel.json`, `server.js`, `assets/p2611summitawl-nav.js`, `PROJEKT.md`, `STYLEGUIDE.md`.

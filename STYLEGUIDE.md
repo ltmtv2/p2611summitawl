@@ -2,7 +2,7 @@
 
 Verbindlich für alle Seiten, Grafiken und Texte des Online-Kongresses „Awakening Leaders 2027“ von Georg Martinka und Sandra Hirsch. Er baut auf dem ME-Design auf und legt fest, was dieses Projekt eigen macht. Bei Widersprüchen gilt dieser Stilguide vor allgemeinen Gewohnheiten, das ME-Design bleibt die Basis.
 
-Musterseite: `/speakereinladung` (awakeningleaders.me/speakereinladung).
+Musterseite: `/speakereinladung-sandra` (awakeningleaders.me/speakereinladung-sandra); `/speakereinladung-georg` ist ein erzeugter Klon (siehe `tools/speakerseiten.py`).
 
 ---
 

@@ -23,7 +23,8 @@
       {
         heading: 'EINLADUNGEN',
         items: [
-          { label: 'Speaker-Einladung', href: '/speakereinladung' },
+          { label: 'Speaker-Einladung (Sandra)', href: '/speakereinladung-sandra' },
+          { label: 'Speaker-Einladung (Georg)', href: '/speakereinladung-georg' },
         ],
       },
       {

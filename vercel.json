@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/speakereinladung", "destination": "/speakereinladung-sandra", "permanent": true },
+    { "source": "/speakereinladung/", "destination": "/speakereinladung-sandra", "permanent": true },
+    { "source": "/speakereinladung/index.html", "destination": "/speakereinladung-sandra", "permanent": true }
+  ]
+}
