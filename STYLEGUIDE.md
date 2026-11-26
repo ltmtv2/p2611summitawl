@@ -166,7 +166,7 @@ a single classical greek marble goddess, standing upright with calm authority, c
 2. Freigabe durch Georg.
 3. Hochladen auf GitHub (`main` geht sofort live).
 4. Eintrag im Arbeitsprotokoll von `PROJEKT.md` im selben Commit.
-5. Zentrale Entscheidungen im Product Book (ClickUp) festhalten, signiert.
+5. Zentrale Entscheidungen im Product Book (ClickUp) festhalten, signiert, und neue Gestaltungsregeln hier und auf der ClickUp-Seite „Stilguide Awakening Leaders“ nachtragen. Das passiert im selben Arbeitsschritt wie die Veröffentlichung, nicht gesammelt später.
 
 ---
 
